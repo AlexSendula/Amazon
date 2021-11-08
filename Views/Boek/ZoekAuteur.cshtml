@@ -1,0 +1,13 @@
+@model List<string>
+
+@{
+    ViewData["Title"] = "Genre";
+}
+
+<div class="text-center">
+    <p>Hier is een lijst van auteurs die beginnen met de letter: @ViewData["letter"].</p>
+    @foreach (var auteur in Model)
+    {
+        <p>@auteur</p>
+    }
+</div>
